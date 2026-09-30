@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Fitness | Online Fitness Coaching</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="promo-bar">
+      <p class="promo-message">
+        <i class="fa-solid fa-fire"></i>
+        LIMITED TIME: GET 10% OFF YOUR FIRST COACHING PROGRAM!
+      </p>
+      <p class="promo-contact">
+        QUESTIONS? <i class="fa-solid fa-phone"></i> (555) 123-4567
+      </p>
+    </div>
+    <header class="main-header">
+      <nav class="navbar">
+        <a href="#home" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+          <span class="logo-text"
+            >FUEL<br /><span class="logo-sub">FITNESS</span></span
+          >
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active nav-link">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="#coaching" class="nav-link"
+              >COACHING <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#programs" class="plan-link" data-plan="fatloss"
+                  >Fat Loss Plan</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="plan-link" data-plan="muscle"
+                  >Muscle Building</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="plan-link" data-plan="nutrition"
+                  >Nutrition Plan</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="plan-link" data-plan="transformation"
+                  >Transformation Plan</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#programs" class="nav-link">PROGRAMS</a></li>
+          <li>
+            <a href="#transformations" class="nav-link">TRANSFORMATIONS</a>
+          </li>
+          <li><a href="#blog" class="nav-link">BLOG</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary nav-cta nav-link"
+          >BOOK A FREE CALL</a
+        >
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="eyebrow">ONLINE FITNESS COACHING</p>
+          <h1 class="hero-heading">
+            STRONGER BODY.<br />
+            <span class="accent-text">BETTER YOU.</span>
+          </h1>
+          <p class="hero-paragraph">
+            Personalized training, expert guidance, and proven strategies to
+            help you build strength, lose fat, and feel your best&mdash;anytime,
+            anywhere.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary"
+              >BOOK A FREE CALL <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="#programs" class="btn btn-outline" id="viewPlansBtn"
+              >VIEW COACHING PLANS</a
+            >
+          </div>
+          <div class="hero-rating">
+            <div class="avatar-stack">
+              <img
+                src="https://placehold.co/40x40/1ad1b8/0d0d0d?text=1"
+                alt="Client"
+                class="avatar"
+              />
+              <img
+                src="https://placehold.co/40x40/14a894/0d0d0d?text=2"
+                alt="Client"
+                class="avatar"
+              />
+              <img
+                src="https://placehold.co/40x40/1ad1b8/0d0d0d?text=3"
+                alt="Client"
+                class="avatar"
+              />
+              <img
+                src="https://placehold.co/40x40/14a894/0d0d0d?text=4"
+                alt="Client"
+                class="avatar"
+              />
+            </div>
+            <div class="rating-text">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <span>5.0 (120+ Reviews)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img
+            src="../womangym.jpg"
+            alt="Woman using phone after a workout"
+            class="hero-image"
+          />
+
+          <div class="hero-feature-card">
+            <ul>
+              <li>
+                <i class="fa-solid fa-clipboard-check"></i> Custom Workout Plans
+              </li>
+              <li>
+                <i class="fa-solid fa-apple-whole"></i> Nutrition Guidance
+              </li>
+              <li>
+                <i class="fa-solid fa-handshake"></i> Accountability &amp;
+                Support
+              </li>
+              <li><i class="fa-solid fa-chart-line"></i> Track Progress</li>
+              <li><i class="fa-solid fa-clock"></i> 24/7 Online Access</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="benefits-container">
+        <div class="benefit-item">
+          <i class="fa-solid fa-user-check"></i>
+          <h3>Personalized Coaching</h3>
+          <p>
+            Workout &amp; nutrition plans tailored to your goals, lifestyle and
+            schedule.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <i class="fa-solid fa-medal"></i>
+          <h3>Expert Guidance</h3>
+          <p>
+            Get support from a certified fitness coach every step of the way.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <i class="fa-solid fa-wifi"></i>
+          <h3>Train Anywhere</h3>
+          <p>100% online coaching so you can train at home or in the gym.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3>Track Progress</h3>
+          <p>Monitor your workouts, nutrition, and results all in one place.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fa-solid fa-trophy"></i>
+          <h3>Real Results</h3>
+          <p>
+            Proven strategies that help you build a strong body and lasting
+            confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="programs" id="programs">
+      <div class="section-heading">
+        <p class="eyebrow">OUR COACHING PROGRAMS</p>
+        <h2>Find the Right Plan for You</h2>
+      </div>
+
+      <div class="programs-grid">
+        <article class="program-card" data-plan="fatloss">
+          <img src="../fatloss.jpg" alt="Woman exercising for fat loss" />
+          <div class="program-card-body">
+            <h3>FAT LOSS PLAN</h3>
+            <p>
+              Lose fat, build lean muscle, and boost energy with a sustainable
+              plan.
+            </p>
+            <button class="learn-more plan-link" data-plan="fatloss">
+              LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="program-card" data-plan="nutrition">
+          <img src="../healthyfood.jpg" alt="Healthy nutrition and food" />
+          <div class="program-card-body">
+            <h3>NUTRITION PLAN</h3>
+            <p>
+              Personalized nutrition strategies that fit your lifestyle and
+              goals.
+            </p>
+            <button class="learn-more plan-link" data-plan="nutrition">
+              LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="program-card" data-plan="muscle">
+          <img src="../muscle.jpg" alt="Man performing a strength exercise" />
+          <div class="program-card-body">
+            <h3>MUSCLE BUILDING</h3>
+            <p>
+              Build strength and muscle with progressive training and expert
+              coaching.
+            </p>
+            <button class="learn-more plan-link" data-plan="muscle">
+              LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="program-card" data-plan="transformation">
+          <img src="../planck.jpg" alt="Woman performing an exercise" />
+          <div class="program-card-body">
+            <h3>TRANSFORMATION PLAN</h3>
+            <p>Complete 12-week coaching for full body transformation.</p>
+            <button class="learn-more plan-link" data-plan="transformation">
+              LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="programs-cta">
+        <button class="btn btn-dark" id="viewAllProgramsBtn">
+          VIEW ALL PROGRAMS
+        </button>
+      </div>
+    </section>
+    <section class="coach" id="about">
+      <div class="coach-container">
+        <div class="coach-image-wrap">
+          <img
+            src="../malecoach.jpg"
+            alt="James Carter, certified fitness coach, standing with arms crossed"
+          />
+        </div>
+
+        <div class="coach-content">
+          <p class="eyebrow">ABOUT YOUR COACH</p>
+          <h2 class="coach-heading">
+            I'm Here to Help You Become Your
+            <span class="accent-text">Best Self.</span>
+          </h2>
+          <p class="coach-bio">
+            Certified fitness coach with 8+ years of experience helping busy
+            professionals and athletes build strength, lose fat, and live
+            healthier lives through personalized coaching.
+          </p>
+          <p class="coach-name">James Carter</p>
+          <p class="coach-title">Certified Fitness Coach</p>
+          <p class="coach-signature">James Carter</p>
+        </div>
+
+        <div class="coach-stats">
+          <div class="stat-box">
+            <i class="fa-solid fa-users"></i>
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-award"></i>
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-dumbbell"></i>
+            <span class="stat-number">25K+</span>
+            <span class="stat-label">Workouts Completed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="transformations">
+      <div class="section-heading">
+        <p class="eyebrow">CLIENT TRANSFORMATIONS</p>
+        <h2>Real People. Real Results.</h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <button
+          class="slider-arrow slider-prev"
+          id="prevBtn"
+          aria-label="Previous testimonial"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <img
+              src="../team.jpg"
+              alt="Sarah M. before and after transformation"
+            />
+            <div class="testimonial-text">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                I lost 18 pounds and gained so much confidence! The workouts
+                were simple to follow and really effective.
+              </p>
+              <span class="testimonial-name">&mdash; Sarah M.</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="../team2.jpg"
+              alt="David R. before and after transformation"
+            />
+            <div class="testimonial-text">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                The best decision I've ever made. My strength, energy, and
+                mindset have completely transformed.
+              </p>
+              <span class="testimonial-name">&mdash; David R.</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="../team3.jpg"
+              alt="Jessica L. before and after transformation"
+            />
+            <div class="testimonial-text">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                In 12 weeks, I lost 22 pounds and learned habits that will last
+                a lifetime. Highly recommend!
+              </p>
+              <span class="testimonial-name">&mdash; Jessica L.</span>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="slider-arrow slider-next"
+          id="nextBtn"
+          aria-label="Next testimonial"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <section class="final-cta" id="contact">
+      <div class="final-cta-container">
+        <div class="final-cta-text">
+          <i class="fa-solid fa-calendar-check final-cta-icon"></i>
+          <div>
+            <h2>Ready to Transform Your Body and Life?</h2>
+            <p>
+              Book your free consultation call and let's create your
+              personalized plan.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-dark final-cta-btn" id="finalCtaBtn">
+          BOOK YOUR FREE CALL <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand">
+          <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+            <span class="logo-text"
+              >FUEL<br /><span class="logo-sub">FITNESS</span></span
+            >
+          </div>
+          <p>
+            Online fitness coaching that fits your lifestyle and delivers real
+            results.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#coaching" class="nav-link">Coaching</a></li>
+            <li><a href="#programs" class="nav-link">Programs</a></li>
+            <li>
+              <a href="#transformations" class="nav-link">Transformations</a>
+            </li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>PROGRAMS</h4>
+          <ul>
+            <li>
+              <a href="#programs" class="plan-link" data-plan="fatloss"
+                >Fat Loss Plan</a
+              >
+            </li>
+            <li>
+              <a href="#programs" class="plan-link" data-plan="muscle"
+                >Muscle Building</a
+              >
+            </li>
+            <li>
+              <a href="#programs" class="plan-link" data-plan="nutrition"
+                >Nutrition Plan</a
+              >
+            </li>
+            <li>
+              <a href="#programs" class="plan-link" data-plan="transformation"
+                >Transformation Plan</a
+              >
+            </li>
+            <li>
+              <a href="#programs" class="plan-link" data-plan="coaching"
+                >1:1 Coaching</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONTACT</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@fuelfitness.com</li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 123 Fitness Way<br />Austin,
+              TX 78701
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>STAY CONNECTED</h4>
+          <p>Get fitness tips, workouts, and exclusive offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="newsletterEmail"
+              required
+            />
+            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Fuel Fitness. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box" id="modalBox">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          &times;
+        </button>
+        <p class="eyebrow" id="modalMeta">
+          8 WEEKS &bull; BEGINNER-INTERMEDIATE
+        </p>
+        <h2 id="modalTitle">Plan Title</h2>
+        <p id="modalWhoFor"></p>
+        <h4>What's Included</h4>
+        <ul id="modalIncluded"></ul>
+        <div class="modal-footer">
+          <span id="modalPrice"></span>
+          <button class="btn btn-primary" id="modalCta">Start Your Plan</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="messageOverlay">
+      <div class="modal-box" id="messageBox">
+        <button class="modal-close" id="messageClose" aria-label="Close">
+          &times;
+        </button>
+        <div id="messageText"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
